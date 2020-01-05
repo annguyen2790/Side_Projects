@@ -1,0 +1,27 @@
+install request and bs4 library for Python
+save an URL of the items wanted in a string
+make a headers using dictionary User-Agent
+make a page request using the method .get from the request library
+import BeautifulSoup from bs4
+make a variable soup equals to the method BeautifulSoup with parameter of page's content and 'html.parser'
+test it with print page.prettify()
+find the title of the data we wanted using soup.find(id="ProductTitle") or any CSS selectors and save it to a variable named title
+find the price of the item we wanted using soup.find(CSS selectors of price) since price is a string, we must converted it into a float
+print out the tile and price to check
+now make a condition to check for the price. For example, if the price is under 100 dollars, send me an email
+now make a function send_mail() to us
+optional:enable less secure app on google and two step verification
+optional:generate app password for google mail app
+install smtplib a simple email protocol allowing us to send emails using Python
+inside the send_mail method, make a server variable and make it equals to smtplib.SMTP('smtp.gmail.com', 587)
+call server.ehlo() and check out what .ehlo() do
+call server.starttls() for encryption purpose
+call server.ehlo() again
+login using the server.login('username', 'password')
+make a variable called subject and store a string in it
+make a variable called body where it contains the message and the URL of the item
+format the string using message = f"Subject: {subject}/n/n{body}"
+call the server.sendmail method with three parameters, the string email sending from the server, the string email receiving from the server and the message
+quit the server or free the memory allocated to the server method :D
+
+
