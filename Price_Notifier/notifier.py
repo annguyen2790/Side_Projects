@@ -1,9 +1,7 @@
 import bs4
 import requests
 from bs4 import BeautifulSoup
-import urllib2
-
-
+import smtplib
 
 def checkPrice():
     #URL of the product wanted 
@@ -27,7 +25,24 @@ def checkPrice():
     #send_email
 
 def sent_email():
-    print('hello there')
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
+    server.login('timbuiild@gmail.com', 'dhfjd22')
+    subject = '\Reduced price!'
+    body = 'Click on this link! https://www.amazon.com/gp/product/B07RF2123Z/ref=s9_acss_bw_cg_PCLTMC_2b1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=C2EYPD896DK1G7KM0PS3&pf_rd_t=101&pf_rd_p=e5059426-911c-49a1-830e-fa1d8c1fc535&pf_rd_i=565108'
+    msg = 'hello'
+    server.sendmail(
+        'mazhurt@gmail.com',
+        'annguyen2790111@gmail.com',
+        msg
+    )
+    print('Email has been sent!')
+    server.quit()
+    
+    
+    
 
 
     
