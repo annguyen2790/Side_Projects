@@ -48,10 +48,10 @@ def sent_email(password):
 if __name__ == "__main__":
     #email = input("Enter your email: ")
     password = raw_input("Enter your password: ")
+    desiredPrice = input("Enter your budget: ")
     price = checkPrice()
     while(True):
-        if price > 450:
+        if price < desiredPrice:
             sent_email(password)
             time.sleep(86400)
-        else:
-            break
+            
