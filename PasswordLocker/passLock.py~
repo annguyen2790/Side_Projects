@@ -1,0 +1,13 @@
+#!/usr/bin/pythom
+# passLock.py 
+import sys
+import pyperclip
+
+passwords = {
+    'emails' : '##########',
+    'overwatch' : '@@@@@@@@@'
+    }
+
+
+print(passwords)
+

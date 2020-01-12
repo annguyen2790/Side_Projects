@@ -1,0 +1,5 @@
+import sys and pyperclip modules
+store account and password in the format of key and value
+from the sys module, handle the command line argument via account = sys.argv[1]
+check condition whether the account argument found in the keys of the dictionary
+if yes, the use the pyperclip module copy methods to copy the password corresponded to account
