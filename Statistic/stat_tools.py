@@ -19,7 +19,7 @@ print(df[['Car', 'MPG']][0:10])
 
 print(df[df['MPG'] >  40]) #get all MPG greater than 40
 
-print(df.ix[[0,1,5], 0:5])
+print(df.ix[[0,1,5], 0:5]) #last five row using index notation
 
 
 #Two ways of printing 5 last rows in df
